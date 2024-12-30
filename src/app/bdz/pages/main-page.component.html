@@ -1,0 +1,16 @@
+<h1>DBZ Page</h1>
+<p>Esta es la pagina de DBZ</p>
+
+
+<div class="row">
+  <div class="col">
+    <h4>Listado</h4>
+    <hr>
+    <app-list-dbz [characterList]="characters" (onDeleteCharacter)="onDeleteCharacter($event)"></app-list-dbz>
+  </div>
+  <div class="col">
+    <h4>Agregar personaje</h4>
+    <hr>
+    <app-create-character (onNewCharacter)="onNewCharacter($event)"></app-create-character>
+  </div>
+</div>
